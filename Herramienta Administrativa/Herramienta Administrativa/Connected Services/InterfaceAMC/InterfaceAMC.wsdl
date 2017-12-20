@@ -1,0 +1,2128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/BlInterfaceAMC/InterfaceAMC" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" targetNamespace="http://tempuri.org/BlInterfaceAMC/InterfaceAMC" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/BlInterfaceAMC/InterfaceAMC">
+      <s:element name="TrabajarProtegido">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RutTrabajador" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrabajarProtegidoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrabajarProtegidoResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DetalleMedico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="folAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodTipTex" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="idAdm" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DetalleMedicoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DetalleMedicoResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaFolioNet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RutPaciente" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaFolioNetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaFolioNetResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AltaLaboral">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FolAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FecAlt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FecIniLab" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RutMedAlt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndCauAlt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndCarAlt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CondReintegro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Condiciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="numDias" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contTto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Tratamiento" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AltaLaboralResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AltaLaboralResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AltaMedica">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FolAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FecAlt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FecIniLab" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RutMedAlt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndCauAlt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndCarAlt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoAlta" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OtroMotivo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AltaMedicaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AltaMedicaResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InicioTerminoAtencion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RutPro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RutPac" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FecRsv" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fecIniAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FecTerAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UgaOfiAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndEstRsv" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FolAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FolOrdAte" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InicioTerminoAtencionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InicioTerminoAtencionResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AnulaHoraControl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RutPro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RutPac" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FecRsv" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UgaOfiAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndEstRsv" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndCauAnuRsv" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FolAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FolOrdAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GlsAnuAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FolRsv" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SeqNum" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AnulaHoraControlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AnulaHoraControlResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AsisteAControl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RutPro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RutPac" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FecRsv" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FecLlePac" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UgaOfiAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndEstRsv" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FolAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FolOrdAte" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AsisteAControlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AsisteAControlResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReservaHoraControl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RutPro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RutPac" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FecRsv" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UgaOfiAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndEstRsv" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FolAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FolOrdAte" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReservaHoraControlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReservaHoraControlResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalificacionAccidente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="folAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndProGra" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CauConIst" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CauConSuseso" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndTipPac" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndCtp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DiasProbTto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndNatLes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndParAfe" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalificacionAccidenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CalificacionAccidenteResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Diagnostico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="folAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fecDgn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodDgn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SeqJer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndTipDgn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RutMedDgn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DiagnosticoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DiagnosticoResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Evolucion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="folAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fecTex" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codtiptex" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ugaofiate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="coduniser" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="txtgls" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rutpro" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EvolucionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EvolucionResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaPersona">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RutPer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ApePat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ApeMat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NomPer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FecNac" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FecDef" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GlsDirPer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GlsRefDir" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UggComPer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodAreTel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FonPer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FonAlt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodAreFax" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FaxPer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodAreCel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FonCelPer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GlsCodPos" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GlsCasPos" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MaiPer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GlsInsEduPer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndSex" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndEstCiv" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodAfp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodIsa" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaPersonaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ActualizaPersonaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IngresoAMC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RutPer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FecAtePac" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FecPrePac" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FecIngHos" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UgaOfiAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UggOfiAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UgaSucCar" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UggSucCar" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UgeSucCar" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndPrvSal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndCnvAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndCnvEmp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndTipAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndAteAmbHos" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndTipPac" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndRei" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndCnsEstSal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GlsNomPer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NumCam" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="numConvenio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RutProf" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NomProf" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FolioExterno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IngresoAMCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IngresoAMCResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BitacoraErrores">
+        <s:complexType />
+      </s:element>
+      <s:element name="BitacoraErroresResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BitacoraErroresResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BitacoraErroresFiltro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nomWebService" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EstadoTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaTransaccion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BitacoraErroresFiltroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BitacoraErroresFiltroResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IngresoHospital">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="folAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UgaOfiAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="numCam" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fecIngHos" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RutProfesional" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IngresoHospitalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IngresoHospitalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EgresoHospital">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="folAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UgaOfiAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="numCam" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fecIngHos" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fecEgrHos" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EgresoHospitalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EgresoHospitalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AnularHospitalizacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="folAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UgaOfiAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="numCam" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fecIngHos" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AnularHospitalizacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AnularHospitalizacionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DardeALTA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="folAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fecAltPac" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DardeALTAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DardeALTAResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AnularALTA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="folAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fecAltPac" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AnularALTAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AnularALTAResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambioCama">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="folAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ugaOfiAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="numCamaNew" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambioCamaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CambioCamaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaALTA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="folAte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rutPaciente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fecAltaPac" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RutProfesional" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaALTAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ActualizaALTAResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="anyType" nillable="true" />
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TrabajarProtegidoSoapIn">
+    <wsdl:part name="parameters" element="tns:TrabajarProtegido" />
+  </wsdl:message>
+  <wsdl:message name="TrabajarProtegidoSoapOut">
+    <wsdl:part name="parameters" element="tns:TrabajarProtegidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="DetalleMedicoSoapIn">
+    <wsdl:part name="parameters" element="tns:DetalleMedico" />
+  </wsdl:message>
+  <wsdl:message name="DetalleMedicoSoapOut">
+    <wsdl:part name="parameters" element="tns:DetalleMedicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaFolioNetSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaFolioNet" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaFolioNetSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaFolioNetResponse" />
+  </wsdl:message>
+  <wsdl:message name="AltaLaboralSoapIn">
+    <wsdl:part name="parameters" element="tns:AltaLaboral" />
+  </wsdl:message>
+  <wsdl:message name="AltaLaboralSoapOut">
+    <wsdl:part name="parameters" element="tns:AltaLaboralResponse" />
+  </wsdl:message>
+  <wsdl:message name="AltaMedicaSoapIn">
+    <wsdl:part name="parameters" element="tns:AltaMedica" />
+  </wsdl:message>
+  <wsdl:message name="AltaMedicaSoapOut">
+    <wsdl:part name="parameters" element="tns:AltaMedicaResponse" />
+  </wsdl:message>
+  <wsdl:message name="InicioTerminoAtencionSoapIn">
+    <wsdl:part name="parameters" element="tns:InicioTerminoAtencion" />
+  </wsdl:message>
+  <wsdl:message name="InicioTerminoAtencionSoapOut">
+    <wsdl:part name="parameters" element="tns:InicioTerminoAtencionResponse" />
+  </wsdl:message>
+  <wsdl:message name="AnulaHoraControlSoapIn">
+    <wsdl:part name="parameters" element="tns:AnulaHoraControl" />
+  </wsdl:message>
+  <wsdl:message name="AnulaHoraControlSoapOut">
+    <wsdl:part name="parameters" element="tns:AnulaHoraControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="AsisteAControlSoapIn">
+    <wsdl:part name="parameters" element="tns:AsisteAControl" />
+  </wsdl:message>
+  <wsdl:message name="AsisteAControlSoapOut">
+    <wsdl:part name="parameters" element="tns:AsisteAControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReservaHoraControlSoapIn">
+    <wsdl:part name="parameters" element="tns:ReservaHoraControl" />
+  </wsdl:message>
+  <wsdl:message name="ReservaHoraControlSoapOut">
+    <wsdl:part name="parameters" element="tns:ReservaHoraControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="CalificacionAccidenteSoapIn">
+    <wsdl:part name="parameters" element="tns:CalificacionAccidente" />
+  </wsdl:message>
+  <wsdl:message name="CalificacionAccidenteSoapOut">
+    <wsdl:part name="parameters" element="tns:CalificacionAccidenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="DiagnosticoSoapIn">
+    <wsdl:part name="parameters" element="tns:Diagnostico" />
+  </wsdl:message>
+  <wsdl:message name="DiagnosticoSoapOut">
+    <wsdl:part name="parameters" element="tns:DiagnosticoResponse" />
+  </wsdl:message>
+  <wsdl:message name="EvolucionSoapIn">
+    <wsdl:part name="parameters" element="tns:Evolucion" />
+  </wsdl:message>
+  <wsdl:message name="EvolucionSoapOut">
+    <wsdl:part name="parameters" element="tns:EvolucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaPersonaSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizaPersona" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaPersonaSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizaPersonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IngresoAMCSoapIn">
+    <wsdl:part name="parameters" element="tns:IngresoAMC" />
+  </wsdl:message>
+  <wsdl:message name="IngresoAMCSoapOut">
+    <wsdl:part name="parameters" element="tns:IngresoAMCResponse" />
+  </wsdl:message>
+  <wsdl:message name="BitacoraErroresSoapIn">
+    <wsdl:part name="parameters" element="tns:BitacoraErrores" />
+  </wsdl:message>
+  <wsdl:message name="BitacoraErroresSoapOut">
+    <wsdl:part name="parameters" element="tns:BitacoraErroresResponse" />
+  </wsdl:message>
+  <wsdl:message name="BitacoraErroresFiltroSoapIn">
+    <wsdl:part name="parameters" element="tns:BitacoraErroresFiltro" />
+  </wsdl:message>
+  <wsdl:message name="BitacoraErroresFiltroSoapOut">
+    <wsdl:part name="parameters" element="tns:BitacoraErroresFiltroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IngresoHospitalSoapIn">
+    <wsdl:part name="parameters" element="tns:IngresoHospital" />
+  </wsdl:message>
+  <wsdl:message name="IngresoHospitalSoapOut">
+    <wsdl:part name="parameters" element="tns:IngresoHospitalResponse" />
+  </wsdl:message>
+  <wsdl:message name="EgresoHospitalSoapIn">
+    <wsdl:part name="parameters" element="tns:EgresoHospital" />
+  </wsdl:message>
+  <wsdl:message name="EgresoHospitalSoapOut">
+    <wsdl:part name="parameters" element="tns:EgresoHospitalResponse" />
+  </wsdl:message>
+  <wsdl:message name="AnularHospitalizacionSoapIn">
+    <wsdl:part name="parameters" element="tns:AnularHospitalizacion" />
+  </wsdl:message>
+  <wsdl:message name="AnularHospitalizacionSoapOut">
+    <wsdl:part name="parameters" element="tns:AnularHospitalizacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="DardeALTASoapIn">
+    <wsdl:part name="parameters" element="tns:DardeALTA" />
+  </wsdl:message>
+  <wsdl:message name="DardeALTASoapOut">
+    <wsdl:part name="parameters" element="tns:DardeALTAResponse" />
+  </wsdl:message>
+  <wsdl:message name="AnularALTASoapIn">
+    <wsdl:part name="parameters" element="tns:AnularALTA" />
+  </wsdl:message>
+  <wsdl:message name="AnularALTASoapOut">
+    <wsdl:part name="parameters" element="tns:AnularALTAResponse" />
+  </wsdl:message>
+  <wsdl:message name="CambioCamaSoapIn">
+    <wsdl:part name="parameters" element="tns:CambioCama" />
+  </wsdl:message>
+  <wsdl:message name="CambioCamaSoapOut">
+    <wsdl:part name="parameters" element="tns:CambioCamaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaALTASoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizaALTA" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaALTASoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizaALTAResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrabajarProtegidoHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="RutTrabajador" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrabajarProtegidoHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="DetalleMedicoHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="CodTipTex" type="s:string" />
+    <wsdl:part name="idAdm" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DetalleMedicoHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaFolioNetHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="RutPaciente" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaFolioNetHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="AltaLaboralHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="FolAte" type="s:string" />
+    <wsdl:part name="FecAlt" type="s:string" />
+    <wsdl:part name="FecIniLab" type="s:string" />
+    <wsdl:part name="RutMedAlt" type="s:string" />
+    <wsdl:part name="IndCauAlt" type="s:string" />
+    <wsdl:part name="IndCarAlt" type="s:string" />
+    <wsdl:part name="CondReintegro" type="s:string" />
+    <wsdl:part name="Condiciones" type="s:string" />
+    <wsdl:part name="numDias" type="s:string" />
+    <wsdl:part name="contTto" type="s:string" />
+    <wsdl:part name="Tratamiento" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AltaLaboralHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="AltaMedicaHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="FolAte" type="s:string" />
+    <wsdl:part name="FecAlt" type="s:string" />
+    <wsdl:part name="FecIniLab" type="s:string" />
+    <wsdl:part name="RutMedAlt" type="s:string" />
+    <wsdl:part name="IndCauAlt" type="s:string" />
+    <wsdl:part name="IndCarAlt" type="s:string" />
+    <wsdl:part name="TipoAlta" type="s:string" />
+    <wsdl:part name="OtroMotivo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AltaMedicaHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="InicioTerminoAtencionHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="RutPro" type="s:string" />
+    <wsdl:part name="RutPac" type="s:string" />
+    <wsdl:part name="FecRsv" type="s:string" />
+    <wsdl:part name="fecIniAte" type="s:string" />
+    <wsdl:part name="FecTerAte" type="s:string" />
+    <wsdl:part name="UgaOfiAte" type="s:string" />
+    <wsdl:part name="IndEstRsv" type="s:string" />
+    <wsdl:part name="FolAte" type="s:string" />
+    <wsdl:part name="FolOrdAte" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InicioTerminoAtencionHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="AnulaHoraControlHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="RutPro" type="s:string" />
+    <wsdl:part name="RutPac" type="s:string" />
+    <wsdl:part name="FecRsv" type="s:string" />
+    <wsdl:part name="UgaOfiAte" type="s:string" />
+    <wsdl:part name="IndEstRsv" type="s:string" />
+    <wsdl:part name="IndCauAnuRsv" type="s:string" />
+    <wsdl:part name="FolAte" type="s:string" />
+    <wsdl:part name="FolOrdAte" type="s:string" />
+    <wsdl:part name="GlsAnuAte" type="s:string" />
+    <wsdl:part name="FolRsv" type="s:string" />
+    <wsdl:part name="SeqNum" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AnulaHoraControlHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="AsisteAControlHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="RutPro" type="s:string" />
+    <wsdl:part name="RutPac" type="s:string" />
+    <wsdl:part name="FecRsv" type="s:string" />
+    <wsdl:part name="FecLlePac" type="s:string" />
+    <wsdl:part name="UgaOfiAte" type="s:string" />
+    <wsdl:part name="IndEstRsv" type="s:string" />
+    <wsdl:part name="FolAte" type="s:string" />
+    <wsdl:part name="FolOrdAte" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AsisteAControlHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="ReservaHoraControlHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="RutPro" type="s:string" />
+    <wsdl:part name="RutPac" type="s:string" />
+    <wsdl:part name="FecRsv" type="s:string" />
+    <wsdl:part name="UgaOfiAte" type="s:string" />
+    <wsdl:part name="IndEstRsv" type="s:string" />
+    <wsdl:part name="FolAte" type="s:string" />
+    <wsdl:part name="FolOrdAte" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ReservaHoraControlHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="CalificacionAccidenteHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="IndProGra" type="s:string" />
+    <wsdl:part name="CauConIst" type="s:string" />
+    <wsdl:part name="CauConSuseso" type="s:string" />
+    <wsdl:part name="IndTipPac" type="s:string" />
+    <wsdl:part name="IndCtp" type="s:string" />
+    <wsdl:part name="DiasProbTto" type="s:string" />
+    <wsdl:part name="IndNatLes" type="s:string" />
+    <wsdl:part name="IndParAfe" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CalificacionAccidenteHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="DiagnosticoHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="fecDgn" type="s:string" />
+    <wsdl:part name="CodDgn" type="s:string" />
+    <wsdl:part name="SeqJer" type="s:string" />
+    <wsdl:part name="IndTipDgn" type="s:string" />
+    <wsdl:part name="RutMedDgn" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DiagnosticoHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="EvolucionHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="fecTex" type="s:string" />
+    <wsdl:part name="codtiptex" type="s:string" />
+    <wsdl:part name="ugaofiate" type="s:string" />
+    <wsdl:part name="coduniser" type="s:string" />
+    <wsdl:part name="txtgls" type="s:string" />
+    <wsdl:part name="rutpro" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EvolucionHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaPersonaHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="RutPer" type="s:string" />
+    <wsdl:part name="ApePat" type="s:string" />
+    <wsdl:part name="ApeMat" type="s:string" />
+    <wsdl:part name="NomPer" type="s:string" />
+    <wsdl:part name="FecNac" type="s:string" />
+    <wsdl:part name="FecDef" type="s:string" />
+    <wsdl:part name="GlsDirPer" type="s:string" />
+    <wsdl:part name="GlsRefDir" type="s:string" />
+    <wsdl:part name="UggComPer" type="s:string" />
+    <wsdl:part name="CodAreTel" type="s:string" />
+    <wsdl:part name="FonPer" type="s:string" />
+    <wsdl:part name="FonAlt" type="s:string" />
+    <wsdl:part name="CodAreFax" type="s:string" />
+    <wsdl:part name="FaxPer" type="s:string" />
+    <wsdl:part name="CodAreCel" type="s:string" />
+    <wsdl:part name="FonCelPer" type="s:string" />
+    <wsdl:part name="GlsCodPos" type="s:string" />
+    <wsdl:part name="GlsCasPos" type="s:string" />
+    <wsdl:part name="MaiPer" type="s:string" />
+    <wsdl:part name="GlsInsEduPer" type="s:string" />
+    <wsdl:part name="IndSex" type="s:string" />
+    <wsdl:part name="IndEstCiv" type="s:string" />
+    <wsdl:part name="CodAfp" type="s:string" />
+    <wsdl:part name="CodIsa" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaPersonaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="IngresoAMCHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="RutPer" type="s:string" />
+    <wsdl:part name="FecAtePac" type="s:string" />
+    <wsdl:part name="FecPrePac" type="s:string" />
+    <wsdl:part name="FecIngHos" type="s:string" />
+    <wsdl:part name="UgaOfiAte" type="s:string" />
+    <wsdl:part name="UggOfiAte" type="s:string" />
+    <wsdl:part name="UgaSucCar" type="s:string" />
+    <wsdl:part name="UggSucCar" type="s:string" />
+    <wsdl:part name="UgeSucCar" type="s:string" />
+    <wsdl:part name="IndPrvSal" type="s:string" />
+    <wsdl:part name="IndCnvAte" type="s:string" />
+    <wsdl:part name="IndCnvEmp" type="s:string" />
+    <wsdl:part name="IndTipAte" type="s:string" />
+    <wsdl:part name="IndAteAmbHos" type="s:string" />
+    <wsdl:part name="IndTipPac" type="s:string" />
+    <wsdl:part name="IndRei" type="s:string" />
+    <wsdl:part name="IndCnsEstSal" type="s:string" />
+    <wsdl:part name="GlsNomPer" type="s:string" />
+    <wsdl:part name="NumCam" type="s:string" />
+    <wsdl:part name="numConvenio" type="s:string" />
+    <wsdl:part name="RutProf" type="s:string" />
+    <wsdl:part name="NomProf" type="s:string" />
+    <wsdl:part name="FolioExterno" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IngresoAMCHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="BitacoraErroresHttpGetIn" />
+  <wsdl:message name="BitacoraErroresHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="BitacoraErroresFiltroHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="nomWebService" type="s:string" />
+    <wsdl:part name="EstadoTransaccion" type="s:string" />
+    <wsdl:part name="FechaTransaccion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="BitacoraErroresFiltroHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="IngresoHospitalHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="UgaOfiAte" type="s:string" />
+    <wsdl:part name="numCam" type="s:string" />
+    <wsdl:part name="fecIngHos" type="s:string" />
+    <wsdl:part name="RutProfesional" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IngresoHospitalHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="EgresoHospitalHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="UgaOfiAte" type="s:string" />
+    <wsdl:part name="numCam" type="s:string" />
+    <wsdl:part name="fecIngHos" type="s:string" />
+    <wsdl:part name="fecEgrHos" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EgresoHospitalHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AnularHospitalizacionHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="UgaOfiAte" type="s:string" />
+    <wsdl:part name="numCam" type="s:string" />
+    <wsdl:part name="fecIngHos" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AnularHospitalizacionHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DardeALTAHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="fecAltPac" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DardeALTAHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AnularALTAHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="fecAltPac" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AnularALTAHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CambioCamaHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="ugaOfiAte" type="s:string" />
+    <wsdl:part name="numCamaNew" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CambioCamaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaALTAHttpGetIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="rutPaciente" type="s:string" />
+    <wsdl:part name="fecAltaPac" type="s:string" />
+    <wsdl:part name="RutProfesional" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaALTAHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="TrabajarProtegidoHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="RutTrabajador" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrabajarProtegidoHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="DetalleMedicoHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="CodTipTex" type="s:string" />
+    <wsdl:part name="idAdm" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DetalleMedicoHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaFolioNetHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="RutPaciente" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaFolioNetHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="AltaLaboralHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="FolAte" type="s:string" />
+    <wsdl:part name="FecAlt" type="s:string" />
+    <wsdl:part name="FecIniLab" type="s:string" />
+    <wsdl:part name="RutMedAlt" type="s:string" />
+    <wsdl:part name="IndCauAlt" type="s:string" />
+    <wsdl:part name="IndCarAlt" type="s:string" />
+    <wsdl:part name="CondReintegro" type="s:string" />
+    <wsdl:part name="Condiciones" type="s:string" />
+    <wsdl:part name="numDias" type="s:string" />
+    <wsdl:part name="contTto" type="s:string" />
+    <wsdl:part name="Tratamiento" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AltaLaboralHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="AltaMedicaHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="FolAte" type="s:string" />
+    <wsdl:part name="FecAlt" type="s:string" />
+    <wsdl:part name="FecIniLab" type="s:string" />
+    <wsdl:part name="RutMedAlt" type="s:string" />
+    <wsdl:part name="IndCauAlt" type="s:string" />
+    <wsdl:part name="IndCarAlt" type="s:string" />
+    <wsdl:part name="TipoAlta" type="s:string" />
+    <wsdl:part name="OtroMotivo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AltaMedicaHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="InicioTerminoAtencionHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="RutPro" type="s:string" />
+    <wsdl:part name="RutPac" type="s:string" />
+    <wsdl:part name="FecRsv" type="s:string" />
+    <wsdl:part name="fecIniAte" type="s:string" />
+    <wsdl:part name="FecTerAte" type="s:string" />
+    <wsdl:part name="UgaOfiAte" type="s:string" />
+    <wsdl:part name="IndEstRsv" type="s:string" />
+    <wsdl:part name="FolAte" type="s:string" />
+    <wsdl:part name="FolOrdAte" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InicioTerminoAtencionHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="AnulaHoraControlHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="RutPro" type="s:string" />
+    <wsdl:part name="RutPac" type="s:string" />
+    <wsdl:part name="FecRsv" type="s:string" />
+    <wsdl:part name="UgaOfiAte" type="s:string" />
+    <wsdl:part name="IndEstRsv" type="s:string" />
+    <wsdl:part name="IndCauAnuRsv" type="s:string" />
+    <wsdl:part name="FolAte" type="s:string" />
+    <wsdl:part name="FolOrdAte" type="s:string" />
+    <wsdl:part name="GlsAnuAte" type="s:string" />
+    <wsdl:part name="FolRsv" type="s:string" />
+    <wsdl:part name="SeqNum" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AnulaHoraControlHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="AsisteAControlHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="RutPro" type="s:string" />
+    <wsdl:part name="RutPac" type="s:string" />
+    <wsdl:part name="FecRsv" type="s:string" />
+    <wsdl:part name="FecLlePac" type="s:string" />
+    <wsdl:part name="UgaOfiAte" type="s:string" />
+    <wsdl:part name="IndEstRsv" type="s:string" />
+    <wsdl:part name="FolAte" type="s:string" />
+    <wsdl:part name="FolOrdAte" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AsisteAControlHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="ReservaHoraControlHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="RutPro" type="s:string" />
+    <wsdl:part name="RutPac" type="s:string" />
+    <wsdl:part name="FecRsv" type="s:string" />
+    <wsdl:part name="UgaOfiAte" type="s:string" />
+    <wsdl:part name="IndEstRsv" type="s:string" />
+    <wsdl:part name="FolAte" type="s:string" />
+    <wsdl:part name="FolOrdAte" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ReservaHoraControlHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="CalificacionAccidenteHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="IndProGra" type="s:string" />
+    <wsdl:part name="CauConIst" type="s:string" />
+    <wsdl:part name="CauConSuseso" type="s:string" />
+    <wsdl:part name="IndTipPac" type="s:string" />
+    <wsdl:part name="IndCtp" type="s:string" />
+    <wsdl:part name="DiasProbTto" type="s:string" />
+    <wsdl:part name="IndNatLes" type="s:string" />
+    <wsdl:part name="IndParAfe" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CalificacionAccidenteHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="DiagnosticoHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="fecDgn" type="s:string" />
+    <wsdl:part name="CodDgn" type="s:string" />
+    <wsdl:part name="SeqJer" type="s:string" />
+    <wsdl:part name="IndTipDgn" type="s:string" />
+    <wsdl:part name="RutMedDgn" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DiagnosticoHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="EvolucionHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="fecTex" type="s:string" />
+    <wsdl:part name="codtiptex" type="s:string" />
+    <wsdl:part name="ugaofiate" type="s:string" />
+    <wsdl:part name="coduniser" type="s:string" />
+    <wsdl:part name="txtgls" type="s:string" />
+    <wsdl:part name="rutpro" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EvolucionHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaPersonaHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="RutPer" type="s:string" />
+    <wsdl:part name="ApePat" type="s:string" />
+    <wsdl:part name="ApeMat" type="s:string" />
+    <wsdl:part name="NomPer" type="s:string" />
+    <wsdl:part name="FecNac" type="s:string" />
+    <wsdl:part name="FecDef" type="s:string" />
+    <wsdl:part name="GlsDirPer" type="s:string" />
+    <wsdl:part name="GlsRefDir" type="s:string" />
+    <wsdl:part name="UggComPer" type="s:string" />
+    <wsdl:part name="CodAreTel" type="s:string" />
+    <wsdl:part name="FonPer" type="s:string" />
+    <wsdl:part name="FonAlt" type="s:string" />
+    <wsdl:part name="CodAreFax" type="s:string" />
+    <wsdl:part name="FaxPer" type="s:string" />
+    <wsdl:part name="CodAreCel" type="s:string" />
+    <wsdl:part name="FonCelPer" type="s:string" />
+    <wsdl:part name="GlsCodPos" type="s:string" />
+    <wsdl:part name="GlsCasPos" type="s:string" />
+    <wsdl:part name="MaiPer" type="s:string" />
+    <wsdl:part name="GlsInsEduPer" type="s:string" />
+    <wsdl:part name="IndSex" type="s:string" />
+    <wsdl:part name="IndEstCiv" type="s:string" />
+    <wsdl:part name="CodAfp" type="s:string" />
+    <wsdl:part name="CodIsa" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaPersonaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="IngresoAMCHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="RutPer" type="s:string" />
+    <wsdl:part name="FecAtePac" type="s:string" />
+    <wsdl:part name="FecPrePac" type="s:string" />
+    <wsdl:part name="FecIngHos" type="s:string" />
+    <wsdl:part name="UgaOfiAte" type="s:string" />
+    <wsdl:part name="UggOfiAte" type="s:string" />
+    <wsdl:part name="UgaSucCar" type="s:string" />
+    <wsdl:part name="UggSucCar" type="s:string" />
+    <wsdl:part name="UgeSucCar" type="s:string" />
+    <wsdl:part name="IndPrvSal" type="s:string" />
+    <wsdl:part name="IndCnvAte" type="s:string" />
+    <wsdl:part name="IndCnvEmp" type="s:string" />
+    <wsdl:part name="IndTipAte" type="s:string" />
+    <wsdl:part name="IndAteAmbHos" type="s:string" />
+    <wsdl:part name="IndTipPac" type="s:string" />
+    <wsdl:part name="IndRei" type="s:string" />
+    <wsdl:part name="IndCnsEstSal" type="s:string" />
+    <wsdl:part name="GlsNomPer" type="s:string" />
+    <wsdl:part name="NumCam" type="s:string" />
+    <wsdl:part name="numConvenio" type="s:string" />
+    <wsdl:part name="RutProf" type="s:string" />
+    <wsdl:part name="NomProf" type="s:string" />
+    <wsdl:part name="FolioExterno" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IngresoAMCHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="BitacoraErroresHttpPostIn" />
+  <wsdl:message name="BitacoraErroresHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="BitacoraErroresFiltroHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="nomWebService" type="s:string" />
+    <wsdl:part name="EstadoTransaccion" type="s:string" />
+    <wsdl:part name="FechaTransaccion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="BitacoraErroresFiltroHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="IngresoHospitalHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="UgaOfiAte" type="s:string" />
+    <wsdl:part name="numCam" type="s:string" />
+    <wsdl:part name="fecIngHos" type="s:string" />
+    <wsdl:part name="RutProfesional" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IngresoHospitalHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="EgresoHospitalHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="UgaOfiAte" type="s:string" />
+    <wsdl:part name="numCam" type="s:string" />
+    <wsdl:part name="fecIngHos" type="s:string" />
+    <wsdl:part name="fecEgrHos" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EgresoHospitalHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AnularHospitalizacionHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="UgaOfiAte" type="s:string" />
+    <wsdl:part name="numCam" type="s:string" />
+    <wsdl:part name="fecIngHos" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AnularHospitalizacionHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DardeALTAHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="fecAltPac" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DardeALTAHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AnularALTAHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="fecAltPac" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AnularALTAHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CambioCamaHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="ugaOfiAte" type="s:string" />
+    <wsdl:part name="numCamaNew" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CambioCamaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaALTAHttpPostIn">
+    <wsdl:part name="NumTransaccion" type="s:string" />
+    <wsdl:part name="folAte" type="s:string" />
+    <wsdl:part name="rutPaciente" type="s:string" />
+    <wsdl:part name="fecAltaPac" type="s:string" />
+    <wsdl:part name="RutProfesional" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaALTAHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="InterfaceAMCSoap">
+    <wsdl:operation name="TrabajarProtegido">
+      <wsdl:input message="tns:TrabajarProtegidoSoapIn" />
+      <wsdl:output message="tns:TrabajarProtegidoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DetalleMedico">
+      <wsdl:input message="tns:DetalleMedicoSoapIn" />
+      <wsdl:output message="tns:DetalleMedicoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaFolioNet">
+      <wsdl:input message="tns:ConsultaFolioNetSoapIn" />
+      <wsdl:output message="tns:ConsultaFolioNetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AltaLaboral">
+      <wsdl:input message="tns:AltaLaboralSoapIn" />
+      <wsdl:output message="tns:AltaLaboralSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AltaMedica">
+      <wsdl:input message="tns:AltaMedicaSoapIn" />
+      <wsdl:output message="tns:AltaMedicaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InicioTerminoAtencion">
+      <wsdl:input message="tns:InicioTerminoAtencionSoapIn" />
+      <wsdl:output message="tns:InicioTerminoAtencionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnulaHoraControl">
+      <wsdl:input message="tns:AnulaHoraControlSoapIn" />
+      <wsdl:output message="tns:AnulaHoraControlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AsisteAControl">
+      <wsdl:input message="tns:AsisteAControlSoapIn" />
+      <wsdl:output message="tns:AsisteAControlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReservaHoraControl">
+      <wsdl:input message="tns:ReservaHoraControlSoapIn" />
+      <wsdl:output message="tns:ReservaHoraControlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CalificacionAccidente">
+      <wsdl:input message="tns:CalificacionAccidenteSoapIn" />
+      <wsdl:output message="tns:CalificacionAccidenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Diagnostico">
+      <wsdl:input message="tns:DiagnosticoSoapIn" />
+      <wsdl:output message="tns:DiagnosticoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Evolucion">
+      <wsdl:input message="tns:EvolucionSoapIn" />
+      <wsdl:output message="tns:EvolucionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaPersona">
+      <wsdl:input message="tns:ActualizaPersonaSoapIn" />
+      <wsdl:output message="tns:ActualizaPersonaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IngresoAMC">
+      <wsdl:input message="tns:IngresoAMCSoapIn" />
+      <wsdl:output message="tns:IngresoAMCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BitacoraErrores">
+      <wsdl:input message="tns:BitacoraErroresSoapIn" />
+      <wsdl:output message="tns:BitacoraErroresSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BitacoraErroresFiltro">
+      <wsdl:input message="tns:BitacoraErroresFiltroSoapIn" />
+      <wsdl:output message="tns:BitacoraErroresFiltroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IngresoHospital">
+      <wsdl:input message="tns:IngresoHospitalSoapIn" />
+      <wsdl:output message="tns:IngresoHospitalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EgresoHospital">
+      <wsdl:input message="tns:EgresoHospitalSoapIn" />
+      <wsdl:output message="tns:EgresoHospitalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnularHospitalizacion">
+      <wsdl:input message="tns:AnularHospitalizacionSoapIn" />
+      <wsdl:output message="tns:AnularHospitalizacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DardeALTA">
+      <wsdl:input message="tns:DardeALTASoapIn" />
+      <wsdl:output message="tns:DardeALTASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnularALTA">
+      <wsdl:input message="tns:AnularALTASoapIn" />
+      <wsdl:output message="tns:AnularALTASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CambioCama">
+      <wsdl:input message="tns:CambioCamaSoapIn" />
+      <wsdl:output message="tns:CambioCamaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaALTA">
+      <wsdl:input message="tns:ActualizaALTASoapIn" />
+      <wsdl:output message="tns:ActualizaALTASoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="InterfaceAMCHttpGet">
+    <wsdl:operation name="TrabajarProtegido">
+      <wsdl:input message="tns:TrabajarProtegidoHttpGetIn" />
+      <wsdl:output message="tns:TrabajarProtegidoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DetalleMedico">
+      <wsdl:input message="tns:DetalleMedicoHttpGetIn" />
+      <wsdl:output message="tns:DetalleMedicoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaFolioNet">
+      <wsdl:input message="tns:ConsultaFolioNetHttpGetIn" />
+      <wsdl:output message="tns:ConsultaFolioNetHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AltaLaboral">
+      <wsdl:input message="tns:AltaLaboralHttpGetIn" />
+      <wsdl:output message="tns:AltaLaboralHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AltaMedica">
+      <wsdl:input message="tns:AltaMedicaHttpGetIn" />
+      <wsdl:output message="tns:AltaMedicaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InicioTerminoAtencion">
+      <wsdl:input message="tns:InicioTerminoAtencionHttpGetIn" />
+      <wsdl:output message="tns:InicioTerminoAtencionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnulaHoraControl">
+      <wsdl:input message="tns:AnulaHoraControlHttpGetIn" />
+      <wsdl:output message="tns:AnulaHoraControlHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AsisteAControl">
+      <wsdl:input message="tns:AsisteAControlHttpGetIn" />
+      <wsdl:output message="tns:AsisteAControlHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReservaHoraControl">
+      <wsdl:input message="tns:ReservaHoraControlHttpGetIn" />
+      <wsdl:output message="tns:ReservaHoraControlHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CalificacionAccidente">
+      <wsdl:input message="tns:CalificacionAccidenteHttpGetIn" />
+      <wsdl:output message="tns:CalificacionAccidenteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Diagnostico">
+      <wsdl:input message="tns:DiagnosticoHttpGetIn" />
+      <wsdl:output message="tns:DiagnosticoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Evolucion">
+      <wsdl:input message="tns:EvolucionHttpGetIn" />
+      <wsdl:output message="tns:EvolucionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaPersona">
+      <wsdl:input message="tns:ActualizaPersonaHttpGetIn" />
+      <wsdl:output message="tns:ActualizaPersonaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IngresoAMC">
+      <wsdl:input message="tns:IngresoAMCHttpGetIn" />
+      <wsdl:output message="tns:IngresoAMCHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BitacoraErrores">
+      <wsdl:input message="tns:BitacoraErroresHttpGetIn" />
+      <wsdl:output message="tns:BitacoraErroresHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BitacoraErroresFiltro">
+      <wsdl:input message="tns:BitacoraErroresFiltroHttpGetIn" />
+      <wsdl:output message="tns:BitacoraErroresFiltroHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IngresoHospital">
+      <wsdl:input message="tns:IngresoHospitalHttpGetIn" />
+      <wsdl:output message="tns:IngresoHospitalHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EgresoHospital">
+      <wsdl:input message="tns:EgresoHospitalHttpGetIn" />
+      <wsdl:output message="tns:EgresoHospitalHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnularHospitalizacion">
+      <wsdl:input message="tns:AnularHospitalizacionHttpGetIn" />
+      <wsdl:output message="tns:AnularHospitalizacionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DardeALTA">
+      <wsdl:input message="tns:DardeALTAHttpGetIn" />
+      <wsdl:output message="tns:DardeALTAHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnularALTA">
+      <wsdl:input message="tns:AnularALTAHttpGetIn" />
+      <wsdl:output message="tns:AnularALTAHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CambioCama">
+      <wsdl:input message="tns:CambioCamaHttpGetIn" />
+      <wsdl:output message="tns:CambioCamaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaALTA">
+      <wsdl:input message="tns:ActualizaALTAHttpGetIn" />
+      <wsdl:output message="tns:ActualizaALTAHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="InterfaceAMCHttpPost">
+    <wsdl:operation name="TrabajarProtegido">
+      <wsdl:input message="tns:TrabajarProtegidoHttpPostIn" />
+      <wsdl:output message="tns:TrabajarProtegidoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DetalleMedico">
+      <wsdl:input message="tns:DetalleMedicoHttpPostIn" />
+      <wsdl:output message="tns:DetalleMedicoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaFolioNet">
+      <wsdl:input message="tns:ConsultaFolioNetHttpPostIn" />
+      <wsdl:output message="tns:ConsultaFolioNetHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AltaLaboral">
+      <wsdl:input message="tns:AltaLaboralHttpPostIn" />
+      <wsdl:output message="tns:AltaLaboralHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AltaMedica">
+      <wsdl:input message="tns:AltaMedicaHttpPostIn" />
+      <wsdl:output message="tns:AltaMedicaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InicioTerminoAtencion">
+      <wsdl:input message="tns:InicioTerminoAtencionHttpPostIn" />
+      <wsdl:output message="tns:InicioTerminoAtencionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnulaHoraControl">
+      <wsdl:input message="tns:AnulaHoraControlHttpPostIn" />
+      <wsdl:output message="tns:AnulaHoraControlHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AsisteAControl">
+      <wsdl:input message="tns:AsisteAControlHttpPostIn" />
+      <wsdl:output message="tns:AsisteAControlHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReservaHoraControl">
+      <wsdl:input message="tns:ReservaHoraControlHttpPostIn" />
+      <wsdl:output message="tns:ReservaHoraControlHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CalificacionAccidente">
+      <wsdl:input message="tns:CalificacionAccidenteHttpPostIn" />
+      <wsdl:output message="tns:CalificacionAccidenteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Diagnostico">
+      <wsdl:input message="tns:DiagnosticoHttpPostIn" />
+      <wsdl:output message="tns:DiagnosticoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Evolucion">
+      <wsdl:input message="tns:EvolucionHttpPostIn" />
+      <wsdl:output message="tns:EvolucionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaPersona">
+      <wsdl:input message="tns:ActualizaPersonaHttpPostIn" />
+      <wsdl:output message="tns:ActualizaPersonaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IngresoAMC">
+      <wsdl:input message="tns:IngresoAMCHttpPostIn" />
+      <wsdl:output message="tns:IngresoAMCHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BitacoraErrores">
+      <wsdl:input message="tns:BitacoraErroresHttpPostIn" />
+      <wsdl:output message="tns:BitacoraErroresHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BitacoraErroresFiltro">
+      <wsdl:input message="tns:BitacoraErroresFiltroHttpPostIn" />
+      <wsdl:output message="tns:BitacoraErroresFiltroHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IngresoHospital">
+      <wsdl:input message="tns:IngresoHospitalHttpPostIn" />
+      <wsdl:output message="tns:IngresoHospitalHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EgresoHospital">
+      <wsdl:input message="tns:EgresoHospitalHttpPostIn" />
+      <wsdl:output message="tns:EgresoHospitalHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnularHospitalizacion">
+      <wsdl:input message="tns:AnularHospitalizacionHttpPostIn" />
+      <wsdl:output message="tns:AnularHospitalizacionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DardeALTA">
+      <wsdl:input message="tns:DardeALTAHttpPostIn" />
+      <wsdl:output message="tns:DardeALTAHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnularALTA">
+      <wsdl:input message="tns:AnularALTAHttpPostIn" />
+      <wsdl:output message="tns:AnularALTAHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CambioCama">
+      <wsdl:input message="tns:CambioCamaHttpPostIn" />
+      <wsdl:output message="tns:CambioCamaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaALTA">
+      <wsdl:input message="tns:ActualizaALTAHttpPostIn" />
+      <wsdl:output message="tns:ActualizaALTAHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="InterfaceAMCSoap" type="tns:InterfaceAMCSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TrabajarProtegido">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/TrabajarProtegido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DetalleMedico">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/DetalleMedico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaFolioNet">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/ConsultaFolioNet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AltaLaboral">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/AltaLaboral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AltaMedica">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/AltaMedica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InicioTerminoAtencion">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/InicioTerminoAtencion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnulaHoraControl">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/AnulaHoraControl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AsisteAControl">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/AsisteAControl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReservaHoraControl">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/ReservaHoraControl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalificacionAccidente">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/CalificacionAccidente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Diagnostico">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/Diagnostico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Evolucion">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/Evolucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaPersona">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/ActualizaPersona" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IngresoAMC">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/IngresoAMC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BitacoraErrores">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/BitacoraErrores" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BitacoraErroresFiltro">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/BitacoraErroresFiltro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IngresoHospital">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/IngresoHospital" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EgresoHospital">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/EgresoHospital" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnularHospitalizacion">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/AnularHospitalizacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DardeALTA">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/DardeALTA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnularALTA">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/AnularALTA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambioCama">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/CambioCama" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaALTA">
+      <soap:operation soapAction="http://tempuri.org/BlInterfaceAMC/InterfaceAMC/ActualizaALTA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="InterfaceAMCHttpGet" type="tns:InterfaceAMCHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="TrabajarProtegido">
+      <http:operation location="/TrabajarProtegido" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DetalleMedico">
+      <http:operation location="/DetalleMedico" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaFolioNet">
+      <http:operation location="/ConsultaFolioNet" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AltaLaboral">
+      <http:operation location="/AltaLaboral" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AltaMedica">
+      <http:operation location="/AltaMedica" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InicioTerminoAtencion">
+      <http:operation location="/InicioTerminoAtencion" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnulaHoraControl">
+      <http:operation location="/AnulaHoraControl" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AsisteAControl">
+      <http:operation location="/AsisteAControl" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReservaHoraControl">
+      <http:operation location="/ReservaHoraControl" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalificacionAccidente">
+      <http:operation location="/CalificacionAccidente" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Diagnostico">
+      <http:operation location="/Diagnostico" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Evolucion">
+      <http:operation location="/Evolucion" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaPersona">
+      <http:operation location="/ActualizaPersona" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IngresoAMC">
+      <http:operation location="/IngresoAMC" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BitacoraErrores">
+      <http:operation location="/BitacoraErrores" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BitacoraErroresFiltro">
+      <http:operation location="/BitacoraErroresFiltro" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IngresoHospital">
+      <http:operation location="/IngresoHospital" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EgresoHospital">
+      <http:operation location="/EgresoHospital" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnularHospitalizacion">
+      <http:operation location="/AnularHospitalizacion" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DardeALTA">
+      <http:operation location="/DardeALTA" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnularALTA">
+      <http:operation location="/AnularALTA" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambioCama">
+      <http:operation location="/CambioCama" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaALTA">
+      <http:operation location="/ActualizaALTA" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="InterfaceAMCHttpPost" type="tns:InterfaceAMCHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="TrabajarProtegido">
+      <http:operation location="/TrabajarProtegido" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DetalleMedico">
+      <http:operation location="/DetalleMedico" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaFolioNet">
+      <http:operation location="/ConsultaFolioNet" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AltaLaboral">
+      <http:operation location="/AltaLaboral" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AltaMedica">
+      <http:operation location="/AltaMedica" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InicioTerminoAtencion">
+      <http:operation location="/InicioTerminoAtencion" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnulaHoraControl">
+      <http:operation location="/AnulaHoraControl" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AsisteAControl">
+      <http:operation location="/AsisteAControl" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReservaHoraControl">
+      <http:operation location="/ReservaHoraControl" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalificacionAccidente">
+      <http:operation location="/CalificacionAccidente" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Diagnostico">
+      <http:operation location="/Diagnostico" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Evolucion">
+      <http:operation location="/Evolucion" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaPersona">
+      <http:operation location="/ActualizaPersona" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IngresoAMC">
+      <http:operation location="/IngresoAMC" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BitacoraErrores">
+      <http:operation location="/BitacoraErrores" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BitacoraErroresFiltro">
+      <http:operation location="/BitacoraErroresFiltro" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IngresoHospital">
+      <http:operation location="/IngresoHospital" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EgresoHospital">
+      <http:operation location="/EgresoHospital" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnularHospitalizacion">
+      <http:operation location="/AnularHospitalizacion" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DardeALTA">
+      <http:operation location="/DardeALTA" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnularALTA">
+      <http:operation location="/AnularALTA" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambioCama">
+      <http:operation location="/CambioCama" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaALTA">
+      <http:operation location="/ActualizaALTA" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InterfaceAMC">
+    <wsdl:port name="InterfaceAMCSoap" binding="tns:InterfaceAMCSoap">
+      <soap:address location="http://170.110.40.83/ServiceInterfaceAMC/InterfaceAMC.asmx" />
+    </wsdl:port>
+    <wsdl:port name="InterfaceAMCHttpGet" binding="tns:InterfaceAMCHttpGet">
+      <http:address location="http://170.110.40.83/ServiceInterfaceAMC/InterfaceAMC.asmx" />
+    </wsdl:port>
+    <wsdl:port name="InterfaceAMCHttpPost" binding="tns:InterfaceAMCHttpPost">
+      <http:address location="http://170.110.40.83/ServiceInterfaceAMC/InterfaceAMC.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

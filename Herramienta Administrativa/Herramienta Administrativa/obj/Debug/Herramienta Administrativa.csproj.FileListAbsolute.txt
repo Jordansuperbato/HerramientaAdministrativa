@@ -1,0 +1,53 @@
+C:\Users\Administrador\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\bin\Debug\Herramienta Administrativa.exe.config
+C:\Users\Administrador\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\bin\Debug\Herramienta Administrativa.exe
+C:\Users\Administrador\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\bin\Debug\Herramienta Administrativa.pdb
+C:\Users\Administrador\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta Administrativa.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.Form1.resources
+C:\Users\Administrador\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.Properties.Resources.resources
+C:\Users\Administrador\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.RevocacionAlta.resources
+C:\Users\Administrador\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta Administrativa.csproj.GenerateResource.Cache
+C:\Users\Administrador\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta Administrativa.exe
+C:\Users\Administrador\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta Administrativa.pdb
+C:\Users\Administrador\documents\visual studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.Menu.resources
+C:\Users\Administrador\documents\visual studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\bin\Debug\Herramienta Administrativa.exe.manifest
+C:\Users\Administrador\documents\visual studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\bin\Debug\Herramienta Administrativa.application
+C:\Users\Administrador\documents\visual studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta Administrativa.exe.manifest
+C:\Users\Administrador\documents\visual studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta Administrativa.application
+C:\Users\Administrador\documents\visual studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.AnularEvo.resources
+C:\Users\Administrador\documents\visual studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.CambiarFolio.resources
+C:\Users\Administrador\documents\visual studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.CambioFolio.resources
+C:\Users\Administrador\documents\visual studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.MenuAdmin.resources
+C:\Users\Administrador\documents\visual studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.FolioTraslapados.resources
+C:\Users\Administrador\documents\visual studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.FolioVigente.resources
+C:\Users\Administrador\documents\visual studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Administrador\documents\visual studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.Compararfolios.resources
+C:\Users\Administrador\documents\visual studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.InsertarAlta.resources
+C:\Users\Administrador\documents\visual studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.AnulacionAlta.resources
+C:\Users\Administrador\documents\visual studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.InsertarEvocs.resources
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\bin\Debug\Herramienta Administrativa.exe.config
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\bin\Debug\Herramienta Administrativa.exe.manifest
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\bin\Debug\Herramienta Administrativa.application
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\bin\Debug\Herramienta Administrativa.exe
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\bin\Debug\Herramienta Administrativa.pdb
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta Administrativa.csprojResolveAssemblyReference.cache
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.AnulacionAlta.resources
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.AnularEvo.resources
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.CambiarFolio.resources
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.CambioFolio.resources
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.Compararfolios.resources
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.FolioTraslapados.resources
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.FolioVigente.resources
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.Form1.resources
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.InsertarAlta.resources
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.InsertarEvocs.resources
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.Menu.resources
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.MenuAdmin.resources
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.Properties.Resources.resources
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.RevocacionAlta.resources
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta Administrativa.csproj.GenerateResource.Cache
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta Administrativa.exe.manifest
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta Administrativa.application
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta Administrativa.exe
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta Administrativa.pdb
+C:\Users\jordan.donoso\Documents\Visual Studio 2017\Projects\Herramienta Administrativa\Herramienta Administrativa\obj\Debug\Herramienta_Administrativa.InsertarCotPlanillaNom.resources
